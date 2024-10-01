@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: green;
+    margin-top: 20%;
+    
+}
+input {
+    font-size: 20px;
+    padding: 10px;
+}
+.paint {
+    background-color: grey;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 500px;
+    margin-top: 40px;
+    padding: 50px;
+}
+button {
+    color: blue;
+   
+}
+</style>
+</head>
+<body class="paint">
+<center>
+    <form name="calc">
+        <input type="text" name="results"> <br><br>
+        <input type="button" value="1" onclick="calc.results.value += '1'">
+        <input type="button" value="2" onclick="calc.results.value += '2'">
+        <input type="button" value="3" onclick="calc.results.value += '3'">
+        <input type="button" value="+" onclick="calc.results.value += '+'"> <br><br>
+        
+        <input type="button" value="4" onclick="calc.results.value += '4'">
+        <input type="button" value="5" onclick="calc.results.value += '5'">
+        <input type="button" value="6" onclick="calc.results.value += '6'">
+        <input type="button" value="-" onclick="calc.results.value += '-'"> <br><br>
+        
+        <input type="button" value="7" onclick="calc.results.value += '7'">
+        <input type="button" value="8" onclick="calc.results.value += '8'">
+        <input type="button" value="9" onclick="calc.results.value += '9'">
+        <input type="button" value="*" onclick="calc.results.value += '*'"> <br><br>
+        
+        <input type="button" value="0" onclick="calc.results.value += '0'">
+        <input type="button" value="." onclick="calc.results.value += '.'">
+        <input type="button" value="/" onclick="calc.results.value += '/'"> 
+        <input type="button" value="=" onclick="calc.results.value = eval(calc.results.value)"> <br><br>
+        <input type="button" value="<--" onclick="calc.results.value = calc.results.value.slice(0, -1)">
+        <input type="button" value="CLEAR" onclick="calc.results.value = ''">
+        
+    </form>
+</center>
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <script type="text/javascript" src="demo.js"> </script>
+<style>
+input{width:40%;height:50px;}
+h2, p
+{
+color:blue;
+}
+button
+{
+width:40%; 
+height:50px; 
+background-color: black; 
+color: yellow; 
+}
+</style>
+</head>   
+<body>
+<h2> Select By Tag Name By ID எடுத்துக்காட்டு</h2>
+<input placeHolder="Enter City Name"> இல் இருந்து<br>
+
+<div id = "cities">
+<input placeHolder="Enter City Name"> இல் இருந்து<br>
+<input placeHolder="Enter City Name"> வரை<br>
+<input placeHolder="Enter City Name"> இடைத்தங்கல்<br>
+
+<button onclick="getCityName()"> Submit </button>
+<p> </p>
+<p> </p>
+<p> </p>
+
+</div>
+  <script>
+ function getCityName()
+{
+    cityDivision = document.getElementById("cities")
+  cityNamesInput = cityDivision.getElementsByTagName("input")
+  cityNamesOutput = document.getElementsByTagName("p")
+for(i=0;i<cityNamesInput.length;i++)
+    {
+  cityNamesOutput[i].innerHTML =cityNamesInput[i].value;
+    cityNamesOutput[i].style.color = "green";
+    cityNamesOutput[i].style.backgroundColor = "yellow";
+  
+}
+  </script>
+</body>
+</html>
